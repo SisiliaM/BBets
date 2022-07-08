@@ -84,9 +84,20 @@ The fair odds for Brownlow's bets are 4.3999. This gave us a close average to 0.
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 
+```{r}
+Class40 <- vector("numeric")
+for(i in 1: 100)(
+  Class40[i] <- BrLw(numClass = 28)
+)
 
+favstats(Class40)
+lcl <- mean(Class40) - 2*sd(Class40)
+ucl <- mean(Class40) + 2*sd(Class40)
+options(digits = 1)
+print(paste(lcl, ucl))
+```
 
-
+In order to make the bet fair the size of class should be 28. This gives us an average close to 0 with notifying the class size. With the mean being `r mean(Class40)`, the lowest amount made `r lcl`, and the highest amount made `r ucl`.
 
 
 
