@@ -105,3 +105,5 @@ In order to make the bet fair the size of class should be 28. This gives us an a
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+Since Brownlow's original 2:1 bet had him constantly making money, it is ruled out as a not fair bet. In order to make this bet fair we would have to set the odds to 4.3999 to make the average closer to 0. Just like the odds in order to make this bet fair we will also have change the size of the class from 30 to 28. We change it to 28 to make the average closer to 0 so that he will not constantly make money. The lowest amount he will make with these modifications would be `r lcl` and the highest amount he will make would be `r ucl`.
+
